@@ -10,7 +10,7 @@ function UpdateCalculation(key){
     localStorage.setItem('Calc', calculation);
 
   if(calculation===Infinity)
-    document.querySelector('body').style.background ="url('/images/kaboom.jpg')";
+    document.querySelector('body').style.background ="url('./images/kaboom.jpg')";
   UpdateDisplay();
   }
   else{
@@ -26,7 +26,7 @@ function ClearClac(){
   localStorage.setItem('Calc', calculation);
   console.log(calculation);
   UpdateDisplay();
-  document.querySelector('body').style.backgroundImage ="url('/images/monkey-image.jpg')";
+  document.querySelector('body').style.backgroundImage ="url('./images/monkey-image.jpg')";
 }
 let calculation = localStorage.getItem('Calc')|| '';
 if(calculation)
